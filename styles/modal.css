@@ -1,0 +1,14 @@
+.fade {
+    background: #181818be;
+}
+
+.modal-content {
+    background: #18181857;
+    color: #fff;
+    height: 500px;
+}
+
+.close {
+    color: #00ffff;
+    opacity: 1;
+}

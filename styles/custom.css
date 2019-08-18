@@ -1,0 +1,380 @@
+@font-face {
+    font-family: "Hipstelvetica_Light";
+    src: url("../fonts/Hipstelvetica\ Light.ttf") format("truetype");
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff11; 
+    border-radius: 5px;
+}
+
+body {
+    background: #181818;
+    background-image: linear-gradient(to bottom, #181818, #394557, #407d9d, #1fbcd8, #00ffff, #00ffff);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+a {
+    color: #181818;
+}
+
+.inner_background{
+    background-color: #00000069;
+    height: -webkit-fill-available;
+}
+
+.nav-link:hover {
+    color: #00ffff;
+}
+
+.logo img{
+    height: 50px;
+    width: 45px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+h1::first-letter, h1 span, footer span {
+    color: #00ffff;
+    text-shadow: 2px 2px #000;
+}
+
+h1, h2, h3, h4{
+    font-family: Hipstelvetica_Light, Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 50px 40px;
+}
+
+.data-directory {
+    width: 300px;
+    height: -webkit-fill-available;
+    margin: auto;
+}
+
+.data-file-container {
+    height: 280px;
+    background: #ffffff11;
+    overflow-y: scroll;
+    padding: 10px 0;
+}
+
+.data-files {
+    height: fit-content;
+    border: none;
+    margin: 0 10px;
+}
+
+.files {
+    margin: 5px 0;
+    background: #ffffff11;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    width: -webkit-fill-available;
+    color: #fff;
+    font-weight: bold;
+}
+
+.files:focus, .close:focus{
+    outline: none;
+}
+
+.clock {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background: #ffffff11;
+}
+
+.time-frame {
+    display: flex;
+    vertical-align: baseline;
+    margin: auto;
+}
+
+.hours, .minutes, .seconds{
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.weather {
+    padding: 20px;
+    height: 150px;
+    background: #ffffff11;
+}
+
+.data-output {
+    width: 600px;
+    height: -webkit-fill-available;
+    margin: auto;
+}
+
+.ai-box {
+    display: inline-flex;  
+    width: -webkit-fill-available;  
+}
+
+.ai-box img {
+    height: 70px;
+    background: #ffffff5d;
+}
+
+.ai-box textarea {
+    vertical-align: middle;
+    background: #ffffff11;
+    border: none;
+    color: #fff;
+    resize: inherit;
+    flex-grow: 2;
+    padding: 5px;
+}
+
+.portal{    
+    width: -webkit-fill-available;
+    margin: 10px 0;
+    height: 100%;
+}
+
+.demo-box{
+    display: inline-flex;
+    width: -webkit-fill-available; 
+    margin: 10px 0;
+}
+
+.demo-image, .demo-code{
+    width: -webkit-fill-available; 
+    height: 240px;
+    padding: 10px;
+    background: #ffffff11;
+    margin: 0 5px;
+}
+
+.demo-description{ 
+    padding: 10px;
+    background: #ffffff11;
+    margin: 10px 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.data-selection {
+    width: 350px;
+    height: -webkit-fill-available;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box, .search-result-box, .card-box {
+    padding: 10px;
+    background: #ffffff11;
+    margin-top: 10px;
+    height: inherit;
+}
+
+.search-box {
+    height: 150px;
+}
+
+textarea:focus, .data-btns:focus, .data-files:hover {
+    outline: none;
+}
+
+.foster-made {
+    background: url('../images/foster-demo-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.think-of-us {
+    background: url('../images/thinkofus-demo-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ecpi-uni {
+    background: url('../images/ecpi-demo-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trilogy {
+    background: url('../images/trilogy-demo-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foster-made-code {
+    background: url('../images/foster-code-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.think-of-us-code {
+    background: url('../images/tou-code-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ecpi-uni-code {
+    background: url('../images/ecpi-code-picture.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trilogy-code {
+    background: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.demo-text-bar {
+    float: right;
+    background: #00000069;
+    height: -webkit-fill-available;
+    writing-mode: tb-rl;
+}
+
+.demo-image-link, .demo-code-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.demo-image-link:hover, .demo-code-link:hover {
+    text-decoration: none;
+    color: #00ffff;
+}
+
+input[type='text'], textarea, input[type='number'] {
+    border: none;
+    background: #00000069;
+    color: #fff;
+    outline: none;
+    width: -webkit-fill-available;
+    padding: inherit;
+}
+
+.cards-info{
+    width: -webkit-fill-available;    
+}
+
+.cards-info input[type='text'], .cards-info textarea, .cards-info input[type='number'], .cards-info input[type='button'] {
+    width: inherit;
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type='button'] {
+    width: -webkit-fill-available;  
+    background: transparent; 
+    border: solid #00ffff;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.display {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.resume-file {
+    margin: inherit;
+    padding: inherit;
+    background: #7fffd4;
+    color: #181818;
+    border: solid #181818;
+}
+
+.file p {
+    text-shadow: 2px 2px 8px #000;
+}
+
+footer {
+    color: #181818;
+    position: fixed;
+    bottom: 10px;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body, .inner_background{
+        background-color: #181818;
+        background-image: url("https://www.transparenttextures.com/patterns/argyle.png");        
+    }
+    .data-selection{
+        margin: 20px 0;
+        order: 1;
+    }
+    .data-directory {
+        margin: 50px 0;
+        order: 2;
+    }
+    .data-output{
+        margin: 20px 0;
+        order: 3;
+    }
+    footer{
+        color: #fff;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body, .inner_background{
+        background-color: #181818;
+        background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+    }
+    .data-selection{
+        margin: 20px 0;
+        order: 1;
+    }
+    .data-directory {
+        margin: 50px 0;
+        order: 2;
+    }
+    .data-output{
+        margin: 20px 0;
+        order: 3;
+    }
+    footer {
+        color: #fff;
+        position: relative;
+    }
+}
