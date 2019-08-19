@@ -338,17 +338,28 @@ footer {
         background-color: #181818;
         background-image: url("https://www.transparenttextures.com/patterns/argyle.png");        
     }
+    /* .data-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: inherit;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding: 50px 40px;
+    } */
     .data-selection{
         margin: 20px 0;
         order: 1;
+        height: auto;
     }
     .data-directory {
         margin: 50px 0;
         order: 2;
+        height: auto;
     }
     .data-output{
         margin: 20px 0;
         order: 3;
+        height: auto;
     }
     footer{
         color: #fff;
@@ -364,14 +375,17 @@ footer {
     .data-selection{
         margin: 20px 0;
         order: 1;
+        height: auto;
     }
     .data-directory {
         margin: 50px 0;
         order: 2;
+        height: auto;
     }
     .data-output{
         margin: 20px 0;
         order: 3;
+        height: auto;
     }
     footer {
         color: #fff;
