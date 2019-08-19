@@ -25,6 +25,7 @@
     <script src="scripts/firebase.js"></script>
     <script src="scripts/preview.js"></script>
     <script src="scripts/search.js"></script>
+    <script src="scripts/mobile.js"></script>
 </head>
 
 <body onload="startTime()">
@@ -148,7 +149,7 @@
                     <div class="search-box">
                         <input type="text" id="filer-text" placeholder="What are you looking for?"/>
                         <input type="button" id="search-btn" value="Search"/>
-                    </div> 
+                    </div>
                     <div class="card-box">
                         <h4 class="text-center">Leave a card</h4>
                         <div class="cards-info">
@@ -159,7 +160,20 @@
                             <textarea id="reason" placeholder="Comments are welcomed here"></textarea>
                             <input type="button" id="card-btn" value="Submit"/>
                         </div>
-                    </div>            
+                    </div>       
+                </div>
+                <div class="contact-section hidden">
+                    <div class="card-box">
+                        <h4 class="text-center">Leave a card</h4>
+                        <div class="cards-info">
+                            <input type="text" id="u_name" placeholder="Your name please"/>
+                            <input type="text" id="c_name" placeholder="Your companies name"/>
+                            <input type="number" id="phone" placeholder="Contact number"/>
+                            <input type="text" id="email" placeholder="Contact email"/>
+                            <textarea id="reason" placeholder="Comments are welcomed here"></textarea>
+                            <input type="button" id="card-btn" value="Submit"/>
+                        </div>
+                    </div>       
                 </div>
             </div>
             <footer>
