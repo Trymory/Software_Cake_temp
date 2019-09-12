@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Software Cake</title>
+
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icons/softwarecake_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/softwarecake_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/softwarecake_logo.png">
+    
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/background.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="styles/modal.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/file-dropdown.js"></script>
+    <script src="scripts/getlocal-data.js"></script>
+    <script src="scripts/intro-modal.js"></script>
+    <script src="scripts/firebase.js"></script>
+    <script src="scripts/portal.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/mobile.js"></script>
+</head>
+
+<body onload="startTime()">
+    <!-- Intro modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">How it works</h1>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>The key to navigating this site is the search bar to the right. This is your control center where all you have to do is type in what you are looking for.</p>
+                <br/>
+                <p>For example try typing in resume or a programming language you are looking for in the box. This will clear out the non related folders and files in the directories section. Using spaces will allow you to look for multiple files at once.</p>
+                <p class="text-center">That's all you need to get started.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- Background bubbles -->
+    <div class="main_container area">
+        <ul class="circles">
+            <li></li> 
+            <li></li>
+            <li></li>             
+            <li></li>             
+            <li></li>             
+            <li></li>             
+            <li></li>             
+            <li></li>             
+            <li></li>             
+            <li></li>             
+            <li></li>             
+        </ul>
+        <!-- End of bubbles -->
+        <div class="inner_background">
+            <a class="logo" href="#">
+                <img src="icons/softwarecake_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="data-container">
+                <div class="data-directory text-center">
+                    <!-- Folders and Files -->
+                    <h1 class="text-center">Directorie<span>s</span></h1>
+                    <div class="data-file-container">
+                        <div class="data-files">
+                            <button id="trilogy" class="files react javascript html css mysql mongodb ajax node">
+                                <img src="images/trilogy-logo.PNG" height="30" class="company-img"/>
+                                <p id="folder-title">Trilogy</p>
+                            </button>
+                            <button id="foster-made" class="files php expressionengine craft algolia twig">
+                                <img src="images/foster-made.PNG" height="30" class="company-img"/>
+                                <p id="folder-title">Foster Made</p>
+                            </button>
+                            <button id="think-of-us" class="files html css javascript">
+                                <img src="images/TOU_Logo_White.png" height="30" class="company-img"/>
+                                <p id="folder-title">Think of Us</p>
+                            </button>
+                            <button id="ecpi-uni" class="files html css javascript java eclipse c# .net framework c c++ node mysql azure">
+                                <img src="images/ecpi-logo.png" height="30" class="company-img"/>
+                                <p id="folder-title">ECPI University</p>
+                            </button>
+                            <button id="resumes" class="files resume resumes references">
+                                <p id="folder-title">All Resumes</p>
+                            </button>
+                            <div class="resume-file hidden">
+                                <a href="files/resumes/Thyraellis Howard.docx">
+                                    <p>Thyraellis Howard</p>
+                                </a>
+                            </div>
+                            <button id="projects" class="files project projects demo demos">
+                                <p id="folder-title">All Projects</p>
+                            </button>
+                            <button id="games" class="files project projects demo demos game games">
+                                <p id="folder-title">All Games</p>
+                            </button>
+                            <button id="references" class="files references reference">
+                                <p>References</p>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- The css for the clock is setup in the getlocal-data.js file -->
+                    <div class="clock" id="clock"></div>
+                </div>
+                <div class="data-output">
+                    <div class="portal">
+                        <h1 class="text-center">Porta<span>l</span></h1>
+                        <div class="demo-box">
+                            <div id="demo-image" class="demo-image">
+                                <a href="#" id="demo-image-link" class="demo-image-link">
+                                    <div class="demo-text-bar text-center">
+                                        <p id="company-name">No View Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="demo-code" class="demo-code">
+                                <a href="#" id="demo-code-link" class="demo-code-link"> 
+                                    <div class="demo-text-bar text-center">
+                                        <p id="company-demo">No View Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="demo-description" class="demo-description">
+                            <p>
+                                Developer Notes:<br/>
+                                Welcome to the construction site for Software Cake.<br/>
+                                This is the between the realms portal. I hope to have the office open soon. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-selection">
+                    <h1 class="text-center">Searc<span>h</span></h1>
+                    <div class="search-box">
+                        <input type="text" id="filer-text" placeholder="What are you looking for?"/>
+                        <input type="button" id="search-btn" value="Search"/>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="text-center">Leave a card</h4>
+                        <div class="cards-info">
+                            <input type="text" id="u_name" placeholder="Your name please"/>
+                            <input type="text" id="c_name" placeholder="Your companies name"/>
+                            <input type="number" id="phone" placeholder="Contact number"/>
+                            <input type="text" id="email" placeholder="Contact email"/>
+                            <textarea id="reason" placeholder="Comments are welcomed here"></textarea>
+                            <input type="button" id="card-btn" value="Submit"/>
+                        </div>
+                    </div>       
+                </div>
+                <div class="contact-section hidden">
+                    <div class="card-box">
+                        <h4 class="text-center">Leave a card</h4>
+                        <div class="cards-info">
+                            <input type="text" id="u_name" placeholder="Your name please"/>
+                            <input type="text" id="c_name" placeholder="Your companies name"/>
+                            <input type="number" id="phone" placeholder="Contact number"/>
+                            <input type="text" id="email" placeholder="Contact email"/>
+                            <textarea id="reason" placeholder="Comments are welcomed here"></textarea>
+                            <input type="button" id="card-btn" value="Submit"/>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            <footer>
+                <p>&copy; <span>S</span>oftware Cake 201<span>9</span></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
