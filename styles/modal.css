@@ -1,9 +1,11 @@
 .fade {
     background: #181818be;
+    background: rgba(0,0,0,0.5);
 }
 
 .modal-content {
     background: #18181857;
+    background: rgba(0,0,0,0.5);
     color: #fff;
     height: 500px;
 }

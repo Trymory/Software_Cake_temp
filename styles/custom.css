@@ -16,6 +16,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #ffffff11; 
+    background: rgba(255,255,255,0.1);
     border-radius: 5px;
 }
 
@@ -33,6 +34,7 @@ a {
 }
 
 .inner_background{
+    background: rgba(0,0,0,0.5);        
     background-color: #00000069;
     height: -webkit-fill-available;
 }
@@ -63,6 +65,7 @@ p {
 }
 
 .data-container {
+    display: table-cell;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -81,6 +84,7 @@ p {
 .data-file-container {
     height: 280px;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
     overflow-y: scroll;
     padding: 10px 0;
 }
@@ -94,9 +98,11 @@ p {
 .files {
     margin: 5px 0;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
     padding: 10px 0;
     outline: none;
     border: none;
+    min-width: 100%;
     width: -webkit-fill-available;
     color: #fff;
     font-weight: bold;
@@ -108,14 +114,17 @@ p {
 
 .clock {
     margin: 20px 0;
+    display: table-cell;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
 }
 
 .time-frame {
+    display: table-cell;
     display: flex;
     vertical-align: baseline;
     margin: auto;
@@ -134,6 +143,7 @@ p {
     padding: 20px;
     height: 150px;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
 }
 
 .data-output {
@@ -143,7 +153,8 @@ p {
 }
 
 .ai-box {
-    display: inline-flex;  
+    display: table-cell;
+    display: inline-flex; 
     width: -webkit-fill-available;  
 }
 
@@ -155,6 +166,7 @@ p {
 .ai-box textarea {
     vertical-align: middle;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
     border: none;
     color: #fff;
     resize: inherit;
@@ -169,22 +181,27 @@ p {
 }
 
 .demo-box{
+    display: table-cell;
     display: inline-flex;
     width: -webkit-fill-available; 
     margin: 10px 0;
 }
 
 .demo-image, .demo-code{
+    min-width: 290px;
     width: -webkit-fill-available; 
+    width: -moz-available;
     height: 240px;
     padding: 10px;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
     margin: 0 5px;
 }
 
 .demo-description{ 
     padding: 10px;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
     margin: 10px 0;
     overflow: hidden;
     overflow-y: scroll;
@@ -194,6 +211,7 @@ p {
     width: 350px;
     height: -webkit-fill-available;
     margin: auto;
+    display: table-cell;
     display: flex;
     flex-direction: column;
 }
@@ -201,6 +219,7 @@ p {
 .search-box, .search-result-box, .card-box {
     padding: 10px;
     background: #ffffff11;
+    background: rgba(255,255,255,0.1);
     margin-top: 10px;
 }
 
@@ -210,8 +229,10 @@ p {
 
 .contact-section{
     width: 350px;
+    min-width: 100%;
     height: -webkit-fill-available;
     margin: auto;
+    display: table-cell;
     display: flex;
     flex-direction: column;
 }
@@ -272,6 +293,7 @@ textarea:focus, .data-btns:focus, .data-files:hover {
 .demo-text-bar {
     float: right;
     background: #00000069;
+    min-width: 100%;
     height: -webkit-fill-available;
     writing-mode: tb-rl;
 }
@@ -289,14 +311,17 @@ textarea:focus, .data-btns:focus, .data-files:hover {
 
 input[type='text'], textarea, input[type='number'] {
     border: none;
+    background: rgba(0,0,0,0.5);    
     background: #00000069;
     color: #fff;
     outline: none;
+    min-width: 100%;
     width: -webkit-fill-available;
     padding: inherit;
 }
 
 .cards-info{
+    min-width: 100%;
     width: -webkit-fill-available;    
 }
 
@@ -307,6 +332,7 @@ input[type='text'], textarea, input[type='number'] {
 }
 
 input[type='button'] {
+    min-width: 100%;
     width: -webkit-fill-available;  
     background: transparent; 
     border: solid #00ffff;
