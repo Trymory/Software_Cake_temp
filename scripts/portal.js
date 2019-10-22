@@ -6,13 +6,10 @@ $(function() {
         $("#company-name").text("Trilogy");
         // $("#company-demo").text("Run Gigatronia");
         $("#company-demo").text("No preview");
-        $("#demo-description").html('Developer Notes: ');
+        $("#demo-description").html('Notes: ');
         $("#demo-description").append(
             "<p style='padding-left:10px;'> Trilogy is a Third-party company that teams up with universities to host bootcamps. " +
             "My position there is a Teacher Assistant for their full stack MERN (Mongo DB, Express.js, React.js, and Node.js) development bootcamp. " +
-            "The bootcamp gives the students an intro into programming and then dives deep into the technical skills. " +
-            "Because of this process the students will have a lot of questions which is where me and my teammates come in. " +
-            "I have the pleasure of not only guiding students through HTML, CSS, Bootstrap, JavaScript languages, AJAX, MySQL - TSQL, Mongo DB - NoSQL, Git, and deployment of these languages using Heroku." +
             "</p>"
         );
 
@@ -40,15 +37,10 @@ $(function() {
 
         $("#company-name").text("Foster Made");
         $("#company-demo").text("Introducing");
-        $("#demo-description").html('Developer Notes: ');
+        $("#demo-description").html('Notes: ');
         $("#demo-description").append(
             "<p style='padding-left:10px;'> Foster Made is one company I really enjoyed working at. " +
-            "Here I received a lot of best practice guidance from my manager and teammates. " +
-            "My position there was CMS Developer Apprentice mostly managing plugins. " +
-            "The languages and CMS tools I used were PHP, Twig, ExpressionEngine 5, and Craft3. " +
-            "\n My main task there was administering bug fixes on their addon called the " +
-            "<a href='https://github.com/fostermadeco/indexernator/issues' style='color:#181818'> Indexernator. </a>" +
-            "(Github Username of Trymory)</p>"
+            "Here I received a lot of best practice guidance from my manager and teammates. "
         );
 
         $(".demo-code").css("background", "");
@@ -74,12 +66,11 @@ $(function() {
 
         $("#company-name").text("Think of Us");
         $("#company-demo").text("Hacking Foster Care");
-        $("#demo-description").html('Developer Notes: ');
+        $("#demo-description").html('Notes: ');
         $("#demo-description").append(
             "<p style='padding-left:10px;'>" +
             "Think of Us was the first apprentiship through ECPI. " +
             "I apprenticed/volunteered here for two years. During those two years I had the pleasure of participating in the Hack Foster Care NYC. " +
-            "After that I got involved in their internal hackathons where I got my first intro into C#, Front-end Development and object oriented programming." +
             "</p>"
         );
 
@@ -106,8 +97,10 @@ $(function() {
 
         $("#company-name").text("ECPI University");
         $("#company-demo").text("Creating Commitment");
-        $("#demo-description").html('Developer Notes: The article states about everything');
-
+        $("#demo-description").html(
+            'Notes: <br/> '+
+            'I have studied at this university. Here I was presented with the presure it takes to be a decent developer.'
+        );
 
         $(".demo-code").css("background", "");
         $(".demo-image").css("background", "");
@@ -132,7 +125,10 @@ $(function() {
 
         $("#company-name").text("Shawn Maida");
         $("#company-demo").text("Yuri Tuppince");
-        $("#demo-description").html('Developer Notes: ');
+        $("#demo-description").html(
+            'Notes: <br/>' +
+            'These are the lovely people I have/had the pleasure of reporting to as well as working with/for.'
+        );
 
         $(".demo-image").css("background", "url('images/shawn.jpg')"); 
         $(".demo-image").css("background-size", "cover"); 
@@ -142,6 +138,28 @@ $(function() {
         $("#demo-image-link").attr("href","https://www.linkedin.com/in/shawnmaida/");
         $("#demo-image-link").attr("target","_blank");
         $("#demo-code-link").attr("href","https://www.linkedin.com/in/yuri-tuppince-phd-35958511/");
+        $("#demo-code-link").attr("target","_blank");
+    }); 
+    $("#videos").click(function() {
+        event.preventDefault();
+
+        $("#company-name").text("Kenium");
+        $("#company-demo").text("Good News: Thyraellis Howard");
+        $("#demo-description").html(
+            'Notes: <br/> '+
+            'The first video is an intro/update on how the AGI (artificial general intelligence) ' +
+            'project with Elias is going. The second video is one on my life and what I did in order to be able to call ' +
+            'myself a developer.'
+        );
+
+        $(".demo-image").css("background", "url('images/scake-update-1.PNG')"); 
+        $(".demo-image").css("background-size", "cover"); 
+        $(".demo-code").css("background", "url('images/rrha-picture.PNG')");
+        $(".demo-code").css("background-size", "cover"); 
+
+        $("#demo-image-link").attr("href","https://youtu.be/jRLezGjZRwA");
+        $("#demo-image-link").attr("target","_blank");
+        $("#demo-code-link").attr("href","https://www.facebook.com/RichmondRedevelopmentAndHousingAuthority/videos/977040375980036/UzpfSTEwMDAwMTY2MjEyNTI3ODozMDYwNjExMjk0OTk0MTQ6MTA6MTU0NjMyOTYwMDoxNTc3ODY1NTk5OjEwNjkwNzg2NDc2NzE2MTQyMTE/");
         $("#demo-code-link").attr("target","_blank");
     }); 
 });
